@@ -17,6 +17,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v3.2.13, RVM: ruby-1.9.3-p448 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v3.2.13, RVM: ruby-1.9.3-p448 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activeadmin (v0.4.3@e015f0, RVM: ruby-1.9.3-p448 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v3.2.13, RVM: ruby-1.9.3-p448 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v3.2.13, RVM: ruby-1.9.3-p448 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activeresource (v3.2.13, RVM: ruby-1.9.3-p448 [global]) [gem]" level="application" />
