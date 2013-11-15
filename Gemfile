@@ -4,7 +4,7 @@ ruby '1.9.3'
 gem 'rails', '3.2.13'
 gem 'actionpack', '3.2.13' # added b/c google_charts gem isn't being a good citizen in gemspec
 
-gem 'pg'
+
 gem 'foreman'
 gem 'thin'
 
@@ -20,7 +20,12 @@ gem 'paper_trail'
 gem 'stringex'
 gem 'settingslogic'
 
+group :production do
+  gem 'pg'
+end
+
 group :development do
+  gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'rspec-rails'
@@ -53,7 +58,15 @@ group :test do
   gem 'rake'
   gem 'faker'
   gem 'timecop'
+  gem 'cucumber-rails'
+
 end
 
 # Charting
 gem 'google_charts'
+
+
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
+

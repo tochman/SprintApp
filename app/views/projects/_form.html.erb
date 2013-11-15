@@ -1,7 +1,7 @@
 <%=
 semantic_form_for @project, :html => { :class => "filter_form consolidated_form" }, :builder => ActiveAdmin::FormBuilder do |f| 
   f.inputs "Project Information", :class => "inputs consolidated" do 
-		f.input :number, as: :string, hint: "This is a unique number identifying the project for your records and is not editable after a project is created", input_html: { disabled: !@project.new_record? && @project.number.present? }
+		f.input :number, as: :string, hint: "This is a unique number identifying the project for your records and is not editable after a project is created", input_html: { size: '10', disabled: !@project.new_record? && @project.number.present? }
     f.input :name, hint: "The project number and client name will prefix this name wherever the project is used"
     f.input :start_date, :label => "Start Date", :as => :datepicker, :wrapper_html => { :class => "filter_form_field filter_date_range field-row" }
     f.input :end_date, :label => "End Date", :as => :datepicker, :wrapper_html => { :class => "filter_form_field filter_date_range field-row" }
